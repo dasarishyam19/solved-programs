@@ -8,7 +8,7 @@ def dfs(visited, graph, root,p):
     return p               
 def bfs(graph,root):
     visited = set()
-    queue = collections.deque([root])
+    queue = collections.deque(graph[root])
     while queue:
         vertex = queue.popleft()
         visited.add(vertex)
